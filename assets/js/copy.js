@@ -8,7 +8,7 @@ codeBlocks.forEach(function(codeBlock) {
     copyButton.ariaLabel = 'Copy to clipboard';
 
     let clipboard = document.createElement('img');
-    clipboard.src = "/3930/assets/static/images/copy.png";
+    clipboard.src = "/3930/assets/static/copy.png";
     clipboard.width = 20;
 
     copyButton.append(clipboard);
@@ -23,7 +23,7 @@ codeBlocks.forEach(function(codeBlock) {
         // add checkmark to indicate that the text has been copied
         copyButton.innerText = '';
         let check = document.createElement('img');
-        check.src = "/3930/assets/static/images/checkmark.png";
+        check.src = "/3930/assets/static/checkmark.png";
         check.width = 20;
         copyButton.append(check);
 
@@ -32,7 +32,7 @@ codeBlocks.forEach(function(codeBlock) {
         // after 4 seconds, show the copy to clipboard icon again
         setTimeout(function () {
             let clipboard = document.createElement('img');
-            clipboard.src = "/3930/assets/static/images/copy.png";
+            clipboard.src = "/3930/assets/static/copy.png";
             clipboard.width = 20;
             copyButton.innerText = '';
             copyButton.append(clipboard);
